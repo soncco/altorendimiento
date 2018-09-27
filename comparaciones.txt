@@ -1,0 +1,12 @@
+Suma de vectores con 10 millones de registros
+Tiempo de ejecución en milisegundos
+
+#   |   CUDA    |   C
+-----------------------
+1   |   2155    |
+2   |   1675    |
+3   |   1697    |
+4   |   1663    |
+5   |   1655    |
+-----------------------
+P   |   1770.2  |
