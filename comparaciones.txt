@@ -1,12 +1,13 @@
 Suma de vectores con 10 millones de registros
 Tiempo de ejecución en milisegundos
+Windows 10, Cuda 9.0, Nvidia GeForce 740M
 
 #   |   CUDA    |   C
 -----------------------
-1   |   2155    |
-2   |   1675    |
-3   |   1697    |
-4   |   1663    |
-5   |   1655    |
+1   |   2155    |   2109
+2   |   1675    |   2068
+3   |   1697    |   2114
+4   |   1663    |   2018
+5   |   1655    |   2004
 -----------------------
-P   |   1770.2  |
+P   |   1770.2  |   2062.6
