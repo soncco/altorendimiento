@@ -1,3 +1,15 @@
+/**
+  * Maestría en Ciencias - Mención Informática
+  * -------------------------------------------
+  * Escriba un programa CUDA que calcule C = n*A + B, en donde A, B, C son vectores
+  * y n una constante escalar.
+  *
+  * Adaptado de https://www.olcf.ornl.gov/tutorials/cuda-vector-addition/
+  * 
+  * Presentado por:
+  * Zuñiga Rojas, Gabriela
+  * Soncco Pimentel, Braulio
+  */
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
