@@ -28,7 +28,6 @@ int main( int argc, char* argv[] )
     clock_t tic, toc;
     double secs;
 
-    tic = clock();
 
     // Size of vectors
     int n = 10000000;
@@ -53,12 +52,15 @@ int main( int argc, char* argv[] )
         h_a[i] = sin(i)*sin(i);
         h_b[i] = cos(i)*cos(i);
     }
- 
+
+    tic = clock();
     // Execute the kernel
 
 	for( i = 0; i < n; i++) {
 		h_c[i] = vecAdd(h_a[i], h_b[i], k);
 	}
+
+    toc = clock();
  
     // Sum up vector c and print result divided by n, this should equal 1 within error
     double sum = 0;
@@ -70,8 +72,6 @@ int main( int argc, char* argv[] )
     free(h_a);
     free(h_b);
     free(h_c);
-
-    toc = clock();
 
     secs = (double)(toc - tic) / CLOCKS_PER_SEC;
     printf("%.16g milisegundos\n", secs * 1000.0);
